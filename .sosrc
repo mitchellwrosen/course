@@ -1,2 +1,4 @@
 - pattern: .*\.hs$
-  command: stack exec doctest -- -Wall -fno-warn-type-defaults \0
+  commands:
+  - stack build
+  - stack exec doctest -- -Wall -fno-warn-type-defaults \0
