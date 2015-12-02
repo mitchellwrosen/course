@@ -175,7 +175,7 @@ instance Arbitrary Player where
 instance Arbitrary Board where
   arbitrary = do
     p <- arbitrary
-    ps <- arbitrary
+    ps <- arbitrary :: Gen [Position]
     return $ foldr propell (start p) ps
 
 propell :: Position -> Board -> Board

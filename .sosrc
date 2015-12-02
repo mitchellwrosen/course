@@ -1,0 +1,2 @@
+- pattern: .*\.hs$
+  command: stack exec doctest -- -Wall -fno-warn-type-defaults \0
